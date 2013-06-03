@@ -1,0 +1,101 @@
+..POST /windrunner_line/game.php HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Dalvik/1.6.0 (Linux; U; Android 4.0.4; HUAWEI U9508 Build/HuaweiU9508)
+Host: smpsjlgwr.linegame.jp:10010
+Connection: Keep-Alive
+Accept-Encoding: gzip
+Content-Length: 586
+
+seq=15&
+hash=06a8add36c8cbb5a37c74dd975fa1b6430dc77e5&
+data=%7b
+%22playScore%22%3a29535%2c
+%22playDistance%22%3a11432%2c
+%22playMoney%22%3a205%2c
+%22todayMissionSuccess%22%3a0%2c
+%22beatCount%22%3a0%2c
+%22sCode%22%3a%22af5d6af132823370ebf25ae5d55c6ae06f480abd%22%2c
+
+%22playData%22%3a
+%22FEVER%3a6194%2cDIE_FIREBALL%3a11432%2cITEM_SHIELD%3a11432%2cEND%3a11432%2cWING_NUM%3a33%2cMONSTER_NUM%3a33%2cSTARBONUS_NUM%3a55%2c%22%2c
+
+%22lang%22%3a%22Chinese%22%2c
+%22cmd%22%3a%22ToS_FINISHGAME%22%2c
+%22userId%22%3a%224515000006907553%22%2c
+%22accessToken%22%3a%227cbbad634274244b5ccd9b8401974cadf0b66af7%22
+%7d
+
+seq=15&
+hash=06a8add36c8cbb5a37c74dd975fa1b6430dc77e5&
+data={
+"playScore":29535,
+"playDistance":11432,
+"playMoney":205,
+"todayMissionSuccess":0,
+"beatCount":0,
+"sCode":"af5d6af132823370ebf25ae5d55c6ae06f480abd",
+
+"playData":
+"FEVER:6194,
+DIE_FIREBALL:11432,
+ITEM_SHIELD:11432,
+END:11432,
+WING_NUM:33,
+MONSTER_NUM:33,
+STARBONUS_NUM:55,",
+
+"lang":"Chinese",
+"cmd":"ToS_FINISHGAME",
+"userId":"4515000006907553",
+"accessToken":"7cbbad634274244b5ccd9b8401974cadf0b66af7"
+}
+
+......HTTP/1.1 200 OK
+Date: Mon, 06 May 2013 10:08:47 GMT
+Server: Apache/2.2.3 (CentOS)
+X-Powered-By: PHP/5.4.11
+Content-Length: 975
+Connection: close
+Content-Type: text/html; charset=UTF-8
+
+4708f4c5df0c8809b1916b09ca6a650db7d6634f|
+{
+"playResult":null,
+"bestScore":64199,
+"bestDist":18361,
+"bestOpts":"C:CHAR1,R:RIDE3,P:PET_HR_010,P2:PET_HS_001,CL:25,RL:25,RE:0",
+"weekScore":64199,
+"weekDist":18361,
+"weekOpts":"C:CHAR1,R:RIDE3,P:PET_HR_010,P2:PET_HS_001,CL:25,RL:25,RE:0",
+"bestDistRecord":21082,
+"weekDistRecord":19001,
+"updatedFriendDatas":null,
+"messageCount":24,
+"todayMissionStatus":1,
+"statDatas":{"BEAT":1368,"DIST":10131493,"FSPNT":3320,"MONEY":105111,"PLAY":1130},
+"resetRecordTime":null,
+"resetRecordMsg":null,
+"myLastWeekScore":null,
+"myLastWeekDist":null,
+"myLastWeekOpts":null,
+"promotion":null,
+
+"cmd":"ToC_FINISHGAME",
+"C_PlayerDatas":{"MONEY":"CHANGED:205,MONEY:18911"},
+"C_ItemDatas":null,
+"C_CharacterDatas":null,
+"C_RideDatas":null,
+"C_PetDatas":null,
+"C_HCPetPoint":null,
+"C_EventDatas":null,
+"C_TextDatas":null,
+"C_PriceDatas":null,
+"C_SystemAlertList":null,
+"C_NotifyMsgList":null,
+"C_NotifyPopupList":null,
+"C_ActionPopup":null,
+"C_RewardBoxCount":null,
+"echo":null,
+"arg":null
+}
+............

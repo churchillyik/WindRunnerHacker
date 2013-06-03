@@ -1,0 +1,54 @@
+..POST /windrunner_line/game.php HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Dalvik/1.6.0 (Linux; U; Android 4.0.4; HUAWEI U9508 Build/HuaweiU9508)
+Host: smpsjlgwr.linegame.jp:10010
+Connection: Keep-Alive
+Accept-Encoding: gzip
+Content-Length: 232
+
+seq=13&
+hash=440b186248640f1f681f28d4405988b8877c8f77&
+data=%7b
+%22lang%22%3a%22Chinese%22%2c
+%22cmd%22%3a%22ToS_LIFETICK%22%2c
+%22userId%22%3a%224515000006907553%22%2c
+%22accessToken%22%3a%227cbbad634274244b5ccd9b8401974cadf0b66af7%22
+%7d
+
+seq=13&
+hash=440b186248640f1f681f28d4405988b8877c8f77&
+data={
+"lang":"Chinese",
+"cmd":"ToS_LIFETICK",
+"userId":"4515000006907553",
+"accessToken":"7cbbad634274244b5ccd9b8401974cadf0b66af7"
+}
+......HTTP/1.1 200 OK
+Date: Mon, 06 May 2013 09:57:00 GMT
+Server: Apache/2.2.3 (CentOS)
+X-Powered-By: PHP/5.4.11
+Content-Length: 424
+Connection: close
+Content-Type: text/html; charset=UTF-8
+
+4aef99b0460db67fa1b22049b9cf34b0d5560916|
+{
+"cmd":"ToC_LIFETICK",
+"C_PlayerDatas":{"LIFE":"CHANGED:1,LIFE:3,NEXTLIFETIME:896"},
+"C_ItemDatas":null,
+"C_CharacterDatas":null,
+"C_RideDatas":null,
+"C_PetDatas":null,
+"C_HCPetPoint":null,
+"C_EventDatas":null,
+"C_TextDatas":null,
+"C_PriceDatas":null,
+"C_SystemAlertList":null,
+"C_NotifyMsgList":null,
+"C_NotifyPopupList":null,
+"C_ActionPopup":null,
+"C_RewardBoxCount":null,
+"echo":null,
+"arg":null
+}
+............
