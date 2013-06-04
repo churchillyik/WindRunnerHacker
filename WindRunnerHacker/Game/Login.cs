@@ -5,7 +5,6 @@ using System.Text.RegularExpressions;
 using System.Web;
 using System.Threading;
 using System.IO;
-using LitJson;
 
 namespace WindRunnerHacker
 {
@@ -27,6 +26,44 @@ namespace WindRunnerHacker
 			}
 			curAcc.bIsLogined = false;
 
+			Dictionary<string, string> pkg_data = new Dictionary<string, string>();
+			Match m = null;
+			string result = "";
+			// CheckSvr
+			pkg_data.Add("OSTYPE", "I");
+			string param = CreateQueryString(pkg_data);
+			
+			PacketDataWapper wapper = new PacketDataWapper();
+			wapper.seq = 0;
+			wapper.hash = "4a56a496352b4ccecf7192fe8ce98ce9a5a6cfa6";
+			wapper.pk_data = null;
+			result = curAcc.PageQuery(ServerParam.strCheckSvr, ServerParam.strCheckUrl + "?" + param, wapper);
+			
+			m = Regex.Match(result, "\"URL\":\"(.*?)\"", RegexOptions.Singleline);
+			if (!m.Success)
+			{
+				return;
+			}
+			string url = m.Groups[1].Value.Replace("\\", "");
+			m = Regex.Match(url, "http://(.*?)/(.*?)php", RegexOptions.Singleline);
+			if (!m.Success)
+			{
+				return;
+			}
+			ServerParam.strGameSvr = m.Groups[1].Value;
+			ServerParam.strStartUrl = m.Groups[2].Value + "php";
+			
+			// GameStart
+			PacketStart pk_start = new PacketStart();
+			pk_start.cmd = "ToS_START";
+			pk_start.clientVersion = "I2.14";
+			
+			wapper.seq = 1;
+			wapper.hash = "24a792a93b572ae611e861a1dbf4d38ac575d7d0";
+			wapper.pk_data = pk_start;
+			result = curAcc.PageQuery(ServerParam.strGameSvr, ServerParam.strStartUrl, wapper);
+			DebugLog(result);
+			
 			curAcc.bIsLogined = true;
 			curAcc.QrySta = QueryStatus.Logined;
 			DebugLog("已成功登陆！");

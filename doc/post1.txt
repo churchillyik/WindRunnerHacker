@@ -1,0 +1,20 @@
+POST /windrunner/check.php?OSTYPE=I HTTP/1.1
+Host: wr-check.wemade.com
+Accept-Encoding: gzip, deflate
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 61
+Accept-Language: zh-cn
+Accept: */*
+Connection: keep-alive
+User-Agent: windrunner/2.14 CFNetwork/609.1.4 Darwin/13.0.0
+
+seq=0&hash=4a56a496352b4ccecf7192fe8ce98ce9a5a6cfa6&data=nullHTTP/1.1 200 OK
+Date: Mon, 03 Jun 2013 15:13:42 GMT
+Server: Apache/2.2.22 (Unix)
+X-Powered-By: PHP/5.4.13
+Content-Length: 96
+Connection: close
+Content-Type: text/html
+
+{"cmd":"ToC_CHECK","MODE":0,"MSG":"","URL":"http:\/\/wr-game.wemade.com\/windrunner\/start.php"}
+4a56a496352b4ccecf7192fe8ce98ce9a5a6cfa6

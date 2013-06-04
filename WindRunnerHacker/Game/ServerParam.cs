@@ -5,11 +5,23 @@ namespace WindRunnerHacker
 {
 	public class ServerParam
 	{
-		// 游戏的域名地址
-		public static string strGameSvr = "smpsjlgwr.linegame.jp:10010";
+		// 检验服务器的域名
+		public static string strCheckSvr = "wr-check.wemade.com";
+		
+		// 游戏服务器的域名
+		public static string strGameSvr = "wr-game.wemade.com";
+		
+		// 检验URL
+		public static string strCheckUrl = "windrunner/check.php";
+		
+		// 登录URL
+		public static string strStartUrl = "windrunner/start.php";
+		
+		// 验证URL
+		public static string strAuthUrl = "windrunner/auth.php";
 		
 		// 游戏URL
-		public static string strGameUrl = "windrunner_line/game.php";
+		public static string strGameUrl = "windrunner/game.php";
 		
 		// 系统语言
 		public static string strSysLang = "Chinese";

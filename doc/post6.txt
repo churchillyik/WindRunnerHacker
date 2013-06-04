@@ -1,0 +1,19 @@
+POST /windrunner/game.php HTTP/1.1
+Host: wr-game.wemade.com
+Accept-Encoding: gzip, deflate
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 334
+Accept-Language: zh-cn
+Accept: */*
+Connection: keep-alive
+User-Agent: windrunner/2.14 CFNetwork/609.1.4 Darwin/13.0.0
+
+seq=4&hash=ba4a6182dc0bf3fd4a8004aef0a851e45a00d0c1&data=%7b%22mode%22%3a%22%22%2c%22characterCode%22%3a%22CHAR1%22%2c%22rideCode%22%3a%22%22%2c%22petId%22%3a%22%22%2c%22petId2%22%3a%22%22%2c%22cmd%22%3a%22ToS_PLAYGAME%22%2c%22userId%22%3a%2289793590877302032%22%2c%22accessToken%22%3a%224255040eab68fef1de98a6df4f5df5fa050366fc%22%7dHTTP/1.1 200 OK
+Date: Mon, 03 Jun 2013 15:36:23 GMT
+Server: Apache/2.2.22 (Unix)
+X-Powered-By: PHP/5.4.11
+Content-Length: 597
+Connection: close
+Content-Type: text/html
+
+8b1201e1f41404fe12ffa9cac327f5a7d4c5bbbe|{"mode":"","playItems":"","characterCode":"CHAR1","rideCode":"","petId":"","petId2":"","random":"847258195","sKey":"9c73960f567e952085fc6210b41856dca04f2204","playOptions":["PLAYMONEYMAX:1500","RANKBONUS:4"],"gameNotice":"","advList":null,"cmd":"ToC_PLAYGAME","C_PlayerDatas":{"LIFE":"CHANGED:-1,LIFE:5,NEXTLIFETIME:-1"},"C_ItemDatas":null,"C_CharacterDatas":null,"C_RideDatas":null,"C_PetDatas":null,"C_PriceDatas":null,"C_PriceList":null,"C_SystemAlertList":null,"C_NotifyMsgList":null,"C_ActionPopup":null,"C_RewardBoxCount":null,"echo":null,"arg":null}

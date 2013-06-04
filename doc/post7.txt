@@ -1,0 +1,19 @@
+POST /windrunner/game.php HTTP/1.1
+Host: wr-game.wemade.com
+Accept-Encoding: gzip, deflate
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 757
+Accept-Language: zh-cn
+Accept: */*
+Connection: keep-alive
+User-Agent: windrunner/2.14 CFNetwork/609.1.4 Darwin/13.0.0
+
+seq=5&hash=009e375eec1977030989168f7b249432625cab3c&data=%7b%22mode%22%3a%22%22%2c%22playScore%22%3a27145%2c%22playDistance%22%3a15243%2c%22playMoney%22%3a113%2c%22todayMissionSuccess%22%3a0%2c%22missionProgress%22%3a%22H%3a0%2cM%3a42%2cL%3a30%22%2c%22beatCount%22%3a1%2c%22sCode%22%3a%226f593d09a7c503c74c25b6950e5438d2b8c328f8%22%2c%22playData%22%3a%22RT%3a03046%2cFEVER%3a6864%2cDIE_FALL%3a15243%2cEND%3a15243%2cWING_NUM%3a30%2cMONSTER_NUM%3a50%2cSTARBONUS_NUM%3a64%2cTPD_NUM%3a1%2cEPD_NUM%3a1%2cPAUSE_NUM%3a0%2cOUT_LEFT_NUM%3a1%2cOUT_RIGHT_NUM%3a0%2cOUT_UP_NUM%3a0%2cOUT_DOWN_NUM%3a1%2cFEVER_NUM%3a1%2c%22%2c%22cmd%22%3a%22ToS_FINISHGAME%22%2c%22userId%22%3a%2289793590877302032%22%2c%22accessToken%22%3a%224255040eab68fef1de98a6df4f5df5fa050366fc%22%7dHTTP/1.1 200 OK
+Date: Mon, 03 Jun 2013 15:38:57 GMT
+Server: Apache/2.2.22 (Unix)
+X-Powered-By: PHP/5.4.11
+Content-Length: 1306
+Connection: close
+Content-Type: text/html
+
+c01c4bfbbccd8d848cf2941d0c114fecfbbb4a8f|{"mode":"","playResult":["NEWBESTSCORE:Y","NEWWEEKSCORE:Y"],"bestScore":27145,"bestDist":15243,"bestOpts":"C:CHAR1,R:,P:,P2:,CL:10,RL:-1,RE:-1,ITMS:","weekScore":27145,"weekDist":15243,"weekOpts":"C:CHAR1,R:,P:,P2:,CL:10,RL:-1,RE:-1,ITMS:","bestDistRecord":15243,"weekDistRecord":15243,"updatedFriendDatas":null,"messageCount":0,"todayMissionStatus":null,"todayMissionDatas":{"H":{"type":"MT22","opt":"","current":0,"goal":50,"leftSec":41621,"today":0,"max":2},"L":{"type":"MT06","opt":"","current":213,"goal":100,"leftSec":0,"today":0,"max":6},"M":{"type":"MT09","opt":"","current":484,"goal":250,"leftSec":0,"today":0,"max":4}},"statDatas":{"BEAT":33,"DIST":220330,"FSPNT":11,"MONEY":5492,"PLAY":34},"promotion":null,"wrClass":"","wrBestScore":0,"wrBestDist":0,"wrBestOpts":"","wrWeekScore":0,"wrWeekDist":0,"wrWeekOpts":"","wrBestDistRecord":0,"wrWeekDistRecord":0,"updatedWRGroupDatas":null,"rankData":{"EXP":2170,"MINEXP":2000,"MAXEXP":5000,"RANK":3},"cmd":"ToC_FINISHGAME","C_PlayerDatas":{"MONEY":"CHANGED:113,MONEY:3392"},"C_ItemDatas":null,"C_CharacterDatas":null,"C_RideDatas":null,"C_PetDatas":null,"C_PriceDatas":null,"C_PriceList":null,"C_SystemAlertList":null,"C_NotifyMsgList":null,"C_ActionPopup":null,"C_RewardBoxCount":null,"echo":null,"arg":null}

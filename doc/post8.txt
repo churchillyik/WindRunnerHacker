@@ -1,0 +1,19 @@
+POST /windrunner/game.php HTTP/1.1
+Host: wr-game.wemade.com
+Accept-Encoding: gzip, deflate
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 247
+Accept-Language: zh-cn
+Accept: */*
+Connection: keep-alive
+User-Agent: windrunner/2.14 CFNetwork/609.1.4 Darwin/13.0.0
+
+seq=6&hash=e56be55856fa28370161cb79064ddd9ef50616fe&data=%7b%22characterCode%22%3a%22CHAR1%22%2c%22cmd%22%3a%22ToS_CHARACTERLEVELUP%22%2c%22userId%22%3a%2289793590877302032%22%2c%22accessToken%22%3a%224255040eab68fef1de98a6df4f5df5fa050366fc%22%7dHTTP/1.1 200 OK
+Date: Mon, 03 Jun 2013 15:43:11 GMT
+Server: Apache/2.2.22 (Unix)
+X-Powered-By: PHP/5.4.11
+Content-Length: 401
+Connection: close
+Content-Type: text/html
+
+a28eb17fe535ffc30d252b199312663a32525cda|{"characterCode":"CHAR1","cmd":"ToC_CHARACTERLEVELUP","C_PlayerDatas":{"MONEY":"CHANGED:-1100,MONEY:2292"},"C_ItemDatas":null,"C_CharacterDatas":{"CHAR1":{"level":11}},"C_RideDatas":null,"C_PetDatas":null,"C_PriceDatas":null,"C_PriceList":null,"C_SystemAlertList":null,"C_NotifyMsgList":null,"C_ActionPopup":null,"C_RewardBoxCount":null,"echo":null,"arg":null}

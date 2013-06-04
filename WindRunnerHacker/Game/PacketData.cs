@@ -5,45 +5,18 @@ namespace WindRunnerHacker
 	public class PacketDataWapper
 	{
 		public int seq;
-		public int hash;
-		public PacketData pk_data;
+		public string hash;
+		public PacketData pk_data = null;
 	}
 	
 	public class PacketData
 	{
-		public string lang;
+	}
+	
+	public class PacketStart : PacketData
+	{
 		public string cmd;
-		public string userId;
-		public string accessToken;
-		public PacketData(Account curAcc)
-		{
-			lang = ServerParam.strSysLang;
-			userId = curAcc.userData.userId;
-			accessToken = curAcc.userData.accessToken;
-		}
-	}
-	
-	public class PacketGameStart : PacketData
-	{
-		public PacketGameStart(Account curAcc) : base(curAcc)
-		{
-			cmd = ServerParam.dicCmdWord["GameStart"];
-		}
-	}
-	
-	public class PacketGameEnd : PacketData
-	{
-		public int playScore;
-		public int playDistance;
-		public int playMoney;
-		public int todayMissionSuccess;
-		public int beatCount;
-		public string sCode;
-		public string playData;
-		public PacketGameEnd(Account curAcc) : base(curAcc)
-		{
-			cmd = ServerParam.dicCmdWord["GameEnd"];
-		}
+		public string clientVersion;
 	}
 	
 	//-------------------------------------------------------------------------

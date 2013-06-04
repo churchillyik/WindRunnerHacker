@@ -46,9 +46,9 @@ namespace WindRunnerHacker
 			}
 			strLastQueryPageURI = Uri;
 			request.Timeout = 30000;
-			request.UserAgent = "Mozilla/5.0 (Windows NT 5.1; rv:20.0) Gecko/20100101 Firefox/20.0";
-			request.Accept = "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8";
-			request.Headers.Add("Accept-Language", "zh-cn,zh;q=0.8,en-us;q=0.5,en;q=0.3");
+			request.UserAgent = "windrunner/2.14 CFNetwork/609.1.4 Darwin/13.0.0";
+			request.Accept = "*/*";
+			request.Headers.Add("Accept-Language", "zh-cn");
 			request.Headers.Add("Accept-Encoding", "gzip, deflate");
 			request.ServicePoint.Expect100Continue = false;
 			request.KeepAlive = true;

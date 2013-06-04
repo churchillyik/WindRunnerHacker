@@ -1,0 +1,19 @@
+POST /windrunner/game.php HTTP/1.1
+Host: wr-game.wemade.com
+Accept-Encoding: gzip, deflate
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 269
+Accept-Language: zh-cn
+Accept: */*
+Connection: keep-alive
+User-Agent: windrunner/2.14 CFNetwork/609.1.4 Darwin/13.0.0
+
+seq=2&hash=45954f71c8f801df48f759a82429ed806c126342&data=%7b%22friendId%22%3a%2289455177694208000%22%2c%22type%22%3anull%2c%22cmd%22%3a%22ToS_SENDMESSAGE%22%2c%22userId%22%3a%2289793590877302032%22%2c%22accessToken%22%3a%224255040eab68fef1de98a6df4f5df5fa050366fc%22%7dHTTP/1.1 200 OK
+Date: Mon, 03 Jun 2013 15:17:33 GMT
+Server: Apache/2.2.22 (Unix)
+X-Powered-By: PHP/5.4.11
+Content-Length: 1194
+Connection: close
+Content-Type: text/html
+
+ab1b96b99f8eaa7f988ac61446f24eaba135df4e|{"friendId":"89455177694208000","type":null,"msgCode":"89793590877302032:1370272653","msgText":"\ubd04 \ubd04 \ubd04 \ubd04\uc774 \uac00\ub124\uc694~~\u266c '{to}'\ub2d8 \ubd04\uc740 \uac00\ub3c4 \ud2b8\ub808\uc774\ub2dd\ub7f0\uc740 \uacc4\uc18d\ub429\ub2c8\ub2e4! \uc6b0\ub9ac \uac19\uc774 20\ud310 \ub2ec\ub9ac\uace0, \uc544\uc774\ud15c \uc138\ud2b8 \ubc1b\uc544\uac00\uc694!","nextSendLifeTime":21600,"leftMsgCount":999,"cmd":"ToC_SENDMESSAGE","C_PlayerDatas":{"LIFE":"CHANGED:1,LIFE:6,NEXTLIFETIME:-1","FRIENDPOINT":"CHANGED:3,FRIENDPOINT:11,LEFTTODAYPOINT:197"},"C_ItemDatas":null,"C_CharacterDatas":null,"C_RideDatas":null,"C_PetDatas":null,"C_PriceDatas":null,"C_PriceList":null,"C_SystemAlertList":null,"C_NotifyMsgList":["\ubcf4\ub108\uc2a4 \uc2e0\ubc1c 1\uac1c\uac00 \uc9c0\uae09\ub418\uc5b4\n\uc9c0\uae08 \ucd1d 6\uac1c\uc758 \uc2e0\ubc1c\uc744 \ubcf4\uc720\ud558\uace0 \uacc4\uc2ed\ub2c8\ub2e4!\n\n\ud654\uba74\uc5d0 \ubc18\uc601\ub418\uae30\uae4c\uc9c0\ub294 \uc2dc\uac04\uc774 \uc870\uae08\n\uac78\ub9b4 \uc218 \uc788\ub294 \uc810 \ucc38\uace0\ud574\uc8fc\uc138\uc694!"],"C_ActionPopup":null,"C_RewardBoxCount":null,"echo":null,"arg":null}

@@ -1,0 +1,37 @@
+POST /windrunner/auth.php HTTP/1.1
+Host: wr-game.wemade.com
+Accept-Encoding: gzip, deflate
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 535
+Accept-Language: zh-cn
+Accept: */*
+Connection: keep-alive
+User-Agent: windrunner/2.14 CFNetwork/609.1.4 Darwin/13.0.0
+
+seq=2&hash=9dbdb3f035a7b55f96bd61efa75b60e692745453&data=%7b%22cmd%22%3a%22ToS_AUTH%22%2c%22userId%22%3a%2289793590877302032%22%2c%22kakaoToken%22%3a%22DsMp3scEgTftAQ1V398XAorIE7a06VsUEi7Yfrv1%2fzlLlghArpqTVctV2vJ9StWKgJ6u4eaicxza1oiSKE2aHoa%2b3U%2fyWnfNsivwBLzIalk0%2beLkOpeVVQ%3d%3d%22%2c%22clientVersion%22%3a%22I2.14%22%2c%22friends%22%3a%5b%2289455177694208000%22%2c%2289428422561973665%22%5d%2c%22deviceName%22%3a%22UNKNOWN%22%2c%22osInfo%22%3a%220.0%22%2c%22macAddress%22%3a%22%22%2c%22appId%22%3a%22%22%2c%22osId%22%3a%22%22%7dHTTP/1.1 200 OK
+Date: Mon, 03 Jun 2013 15:13:46 GMT
+Server: Apache/2.2.22 (Unix)
+X-Powered-By: PHP/5.4.11
+Content-Length: 383
+Connection: close
+Content-Type: text/html
+
+77e2ad016dbe2e38e5432d64e7735c09c9ceee9f|{"cmd":"ToC_AUTH","gameUrl":"http:\/\/wr-game.wemade.com\/windrunner\/game.php","accessToken":"4255040eab68fef1de98a6df4f5df5fa050366fc","wemadePlatformViewUrl":"http:\/\/m.platform.wemade.com\/?gameCode=201156&requestType=1&authToken=&userNo=89793590877302032&appID=&deviceID=&osID=10&osVersion=0&platformCode=7&reqMessage=&nick=&smsCode=0"}
+
+data=%7b
+%22cmd%22%3a%22ToS_AUTH%22%2c
+%22userId%22%3a%2289793590877302032%22%2c
+%22kakaoToken%22%3a%22
+DsMp3scEgTftAQ1V398XAorIE7a06VsUEi7Yfrv1%2fzlLlghArpqTVctV2vJ9StWKgJ6u4eaicxza1oiSKE2aHoa%2b3U%2fyWnfNsivwBLzIalk0%2beLkOpeVVQ%3d%3d
+%22%2c
+
+%22clientVersion%22%3a%22I2.14%22%2c
+%22friends%22%3a%5b%2289455177694208000%22%2c%2289428422561973665%22%5d%2c
+%22deviceName%22%3a%22UNKNOWN%22%2c
+%22osInfo%22%3a%220.0%22%2c
+%22macAddress%22%3a%22%22%2c
+%22appId%22%3a%22%22%2c
+%22osId%22%3a%22%22
+%7d
+data={"cmd":"ToS_AUTH","userId":"89793590877302032","kakaoToken":"DsMp3scEgTftAQ1V398XAorIE7a06VsUEi7Yfrv1/zlLlghArpqTVctV2vJ9StWKgJ6u4eaicxza1oiSKE2aHoa+3U/yWnfNsivwBLzIalk0+eLkOpeVVQ==","clientVersion":"I2.14","friends":["89455177694208000","89428422561973665"],"deviceName":"UNKNOWN","osInfo":"0.0","macAddress":"","appId":"","osId":""}
+data={"cmd":"ToS_AUTH","userId":"89793590877302032","kakaoToken":"DsMp3scEgTftAQ1V398XAorIE7a06VsUEi7Yfrv1/zlLlghArpqTVctV2vJ9StWKgJ6u4eaicxza1oiSKE2aHoa+3U/yWnfNsivwBLzIalk0+eLkOpeVVQ==","clientVersion":"I2.14","friends":["89455177694208000","89428422561973665"],"deviceName":"UNKNOWN","osInfo":"0.0","macAddress":"","appId":"","osId":""}
