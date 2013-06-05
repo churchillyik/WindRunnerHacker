@@ -146,9 +146,9 @@ namespace WindRunnerHacker
 			this.tableLayoutPanel2.Location = new System.Drawing.Point(181, 3);
 			this.tableLayoutPanel2.Name = "tableLayoutPanel2";
 			this.tableLayoutPanel2.RowCount = 3;
-			this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 65F));
+			this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40F));
 			this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8F));
-			this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 27F));
+			this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 52F));
 			this.tableLayoutPanel2.Size = new System.Drawing.Size(548, 385);
 			this.tableLayoutPanel2.TabIndex = 1;
 			// 
@@ -157,23 +157,23 @@ namespace WindRunnerHacker
 			this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.panel1.Location = new System.Drawing.Point(3, 3);
 			this.panel1.Name = "panel1";
-			this.panel1.Size = new System.Drawing.Size(542, 244);
+			this.panel1.Size = new System.Drawing.Size(542, 148);
 			this.panel1.TabIndex = 0;
 			// 
 			// tbLog
 			// 
 			this.tbLog.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.tbLog.Location = new System.Drawing.Point(3, 283);
+			this.tbLog.Location = new System.Drawing.Point(3, 187);
 			this.tbLog.Multiline = true;
 			this.tbLog.Name = "tbLog";
-			this.tbLog.Size = new System.Drawing.Size(542, 99);
+			this.tbLog.Size = new System.Drawing.Size(542, 195);
 			this.tbLog.TabIndex = 1;
 			// 
 			// panel2
 			// 
 			this.panel2.Controls.Add(this.btnClearLog);
 			this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.panel2.Location = new System.Drawing.Point(3, 253);
+			this.panel2.Location = new System.Drawing.Point(3, 157);
 			this.panel2.Name = "panel2";
 			this.panel2.Size = new System.Drawing.Size(542, 24);
 			this.panel2.TabIndex = 2;

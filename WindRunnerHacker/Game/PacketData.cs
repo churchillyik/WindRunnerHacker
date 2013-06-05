@@ -19,6 +19,20 @@ namespace WindRunnerHacker
 		public string clientVersion;
 	}
 	
+	public class PacketAuth : PacketData
+	{
+		public string cmd;
+		public string userId;
+		public string kakaoToken;
+		public string clientVersion;
+		public string[] friends;
+		public string deviceName;
+		public string osInfo;
+		public string macAddress;
+		public string appId;
+		public string osId;
+	}
+	
 	//-------------------------------------------------------------------------
 	public class RecvData
 	{

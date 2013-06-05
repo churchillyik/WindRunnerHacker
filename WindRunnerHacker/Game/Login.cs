@@ -53,15 +53,35 @@ namespace WindRunnerHacker
 			ServerParam.strGameSvr = m.Groups[1].Value;
 			ServerParam.strStartUrl = m.Groups[2].Value + "php";
 			
+			// ----------------------------------------------------------------------------------------------------
 			// GameStart
 			PacketStart pk_start = new PacketStart();
 			pk_start.cmd = "ToS_START";
 			pk_start.clientVersion = "I2.14";
 			
 			wapper.seq = 1;
-			wapper.hash = "24a792a93b572ae611e861a1dbf4d38ac575d7d0";
+			wapper.hash = "24a792a93b572ae611e861a1dbf4d38ac575d7d9";
 			wapper.pk_data = pk_start;
 			result = curAcc.PageQuery(ServerParam.strGameSvr, ServerParam.strStartUrl, wapper);
+			
+			// ----------------------------------------------------------------------------------------------------
+			// GameAuth
+			PacketAuth pk_auth = new PacketAuth();
+			pk_auth.cmd = "ToS_AUTH";
+			pk_auth.userId = "89793590877302032";
+			pk_auth.kakaoToken = "DsMp3scEgTftAQ1V398XAorIE7a06VsUEi7Yfrv1/zlLlghArpqTVctV2vJ9StWKgJ6u4eaicxza1oiSKE2aHoa+3U/yWnfNsivwBLzIalk0+eLkOpeVVQ==";
+			pk_auth.clientVersion = "I2.14";
+			pk_auth.friends = new string[] {"89455177694208000","89428422561973665"};
+			pk_auth.deviceName = "UNKNOWN";
+			pk_auth.osInfo = "0.0";
+			pk_auth.macAddress = "";
+			pk_auth.appId = "";
+			pk_auth.osId = "";
+			
+			wapper.seq = 2;
+			wapper.hash = "9dbdb3f035a7b55f96bd61efa75b60e692745453";
+			wapper.pk_data = pk_auth;
+			result = curAcc.PageQuery(ServerParam.strGameSvr, ServerParam.strAuthUrl, wapper);
 			DebugLog(result);
 			
 			curAcc.bIsLogined = true;
@@ -80,7 +100,7 @@ namespace WindRunnerHacker
 		public static string base64_decode(string str)
 		{
 			byte[] sa = Convert.FromBase64String(str);
-			Encoding Ansi = Encoding.GetEncoding("GB2312");
+			Encoding Ansi = Encoding.UTF8;
 			string wa = Ansi.GetString(sa);
 			return wa;
 		}

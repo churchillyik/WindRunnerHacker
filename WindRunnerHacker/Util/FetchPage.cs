@@ -113,20 +113,12 @@ namespace WindRunnerHacker
 					sb.Append("&");
 				}
 
-				// Got to support some weired form data, like arrays
-				if (x.Key == "!!!RawData!!!")
-				{
-					sb.Append(x.Value);
-					continue;
-				}
-
 				sb.Append(HttpUtility.UrlEncode(x.Key));
 				sb.Append("=");
 				sb.Append(HttpUtility.UrlEncode(x.Value));
 			}
 			string QueryString = sb.ToString();
-			ASCIIEncoding encoding = new ASCIIEncoding ();
-			byte[] qry_bytes = encoding.GetBytes(QueryString);
+			byte[] qry_bytes = Encoding.GetEncoding("iso-8859-1").GetBytes(QueryString);
 			
 			return qry_bytes;
 		}
