@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Text;
 using System.Web;
 using LitJson;
-using System.Security.Cryptography;
 
 namespace WindRunnerHacker
 {
@@ -25,6 +24,7 @@ namespace WindRunnerHacker
 			return PageQuery(strSvr, strURL, (byte[])null, Encoding.UTF8);
 		}
 		
+		private static int seq = 0;
 		public string PageQuery(string strSvr, string strURL, PacketDataWapper wapper)
 		{
 			string json_data = "null";
@@ -32,13 +32,23 @@ namespace WindRunnerHacker
 			{
 				json_data = JsonMapper.ToJson(wapper.pk_data);
 			}
-			//wapper.hash = SHA1Decode(json_data);
+			wapper.hash = ServerParam.getShaStrToS(json_data);
 			
 			Dictionary<string, string> dicPostData = new Dictionary<string, string>();
-			dicPostData.Add("seq", wapper.seq.ToString());
+			dicPostData.Add("seq", seq.ToString());
 			dicPostData.Add("hash", wapper.hash);
 			dicPostData.Add("data", json_data);
-			return PageQuery(strSvr, strURL, dicPostData);
+			string result = PageQuery(strSvr, strURL, dicPostData, Encoding.GetEncoding("iso-8859-1"));
+			
+			if (wapper.pk_data != null && wapper.pk_data.cmd == "ToS_AUTH")
+			{
+				seq = 1;
+			}
+			else
+			{
+				seq++;
+			}
+			return result;
 		}
 		
 		public string PageQuery(string strSvr, string strURL, Dictionary<string, string> dicPostData)
@@ -121,21 +131,6 @@ namespace WindRunnerHacker
 			byte[] qry_bytes = Encoding.GetEncoding("iso-8859-1").GetBytes(QueryString);
 			
 			return qry_bytes;
-		}
-		
-		public string SHA1Decode(string origin_str)
-		{
-			//建立SHA1对象
-			SHA1 sha = new SHA1CryptoServiceProvider();
-
-			//将mystr转换成byte[]
-			byte[] dataToHash = Encoding.GetEncoding("iso-8859-1").GetBytes(origin_str);
-			
-			//Hash运算
-			byte[] dataHashed = sha.ComputeHash(dataToHash);
-
-			//将运算结果转换成string
-			return BitConverter.ToString(dataHashed).Replace("-", "").ToLower();
 		}
 	}
 }

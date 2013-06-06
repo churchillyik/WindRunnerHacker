@@ -4,24 +4,22 @@ namespace WindRunnerHacker
 {
 	public class PacketDataWapper
 	{
-		public int seq;
 		public string hash;
 		public PacketData pk_data = null;
 	}
 	
 	public class PacketData
 	{
+		public string cmd;
 	}
 	
 	public class PacketStart : PacketData
 	{
-		public string cmd;
 		public string clientVersion;
 	}
 	
 	public class PacketAuth : PacketData
 	{
-		public string cmd;
 		public string userId;
 		public string kakaoToken;
 		public string clientVersion;

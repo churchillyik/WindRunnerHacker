@@ -25,7 +25,6 @@ namespace WindRunnerHacker
 				return;
 			}
 			curAcc.bIsLogined = false;
-
 			Dictionary<string, string> pkg_data = new Dictionary<string, string>();
 			Match m = null;
 			string result = "";
@@ -34,8 +33,6 @@ namespace WindRunnerHacker
 			string param = CreateQueryString(pkg_data);
 			
 			PacketDataWapper wapper = new PacketDataWapper();
-			wapper.seq = 0;
-			wapper.hash = "4a56a496352b4ccecf7192fe8ce98ce9a5a6cfa6";
 			wapper.pk_data = null;
 			result = curAcc.PageQuery(ServerParam.strCheckSvr, ServerParam.strCheckUrl + "?" + param, wapper);
 			
@@ -59,8 +56,6 @@ namespace WindRunnerHacker
 			pk_start.cmd = "ToS_START";
 			pk_start.clientVersion = "I2.14";
 			
-			wapper.seq = 1;
-			wapper.hash = "24a792a93b572ae611e861a1dbf4d38ac575d7d9";
 			wapper.pk_data = pk_start;
 			result = curAcc.PageQuery(ServerParam.strGameSvr, ServerParam.strStartUrl, wapper);
 			
@@ -78,8 +73,7 @@ namespace WindRunnerHacker
 			pk_auth.appId = "";
 			pk_auth.osId = "";
 			
-			wapper.seq = 2;
-			wapper.hash = "9dbdb3f035a7b55f96bd61efa75b60e692745453";
+			//wapper.hash = "9dbdb3f035a7b55f96bd61efa75b60e692745453";
 			wapper.pk_data = pk_auth;
 			result = curAcc.PageQuery(ServerParam.strGameSvr, ServerParam.strAuthUrl, wapper);
 			DebugLog(result);
